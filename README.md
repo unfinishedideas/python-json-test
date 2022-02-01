@@ -1,7 +1,5 @@
 # python-json-test
 
-Python playground where we can get our feet wet and splash around in the language.
-
 The code in ```main.py``` demonstrates at least one way we can easily read/write json files. <br /> 
 I primarily followed [this](https://www.youtube.com/watch?v=YUwm9BUhHIo) youtube video. <br />
 
