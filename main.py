@@ -41,9 +41,10 @@ def addData():
     with open (filename, "r") as f:
         temp = json.load(f) #returns json object as a python dictionary to temp
 
-    #assign values to all keys for a member account
     current_date = datetime.date.today().strftime("%m-%d-%Y")
     print("Current Date: " + current_date)
+
+    #assign values to all keys for a member account
     service_record["date_created"] = current_date
     service_record["date_of_service"] = input("Enter Date of Service [MM-DD-YYYY]: ") 
     service_record["provider_id"] = input("Enter Your Provider ID [9 digits]: ")
@@ -57,26 +58,29 @@ def addData():
     with open (filename, 'w') as f:
         json.dump(temp,f,indent=4)   #writes our updated temp dictionary to the json file
 
-# main program
-clearScreen()
-print("Test JSON Menu")
-print("Data Management System\n")
+# Is this what main looks like in python? 
+def runTest():
+    clearScreen()
+    print("Test JSON Database")
+    print("Data Management System\n")
 
-while True: 
-    choice()
-    response = input("\nEnter Number: ")
-    if response == "1":
-        clearScreen()
-        print("\nViewing All Service Records:\n")
-        viewData()
-        print()
-    elif response == '2':
-        clearScreen()
-        addData()
-    elif response =='3':
-        clearScreen()
-        print("Goodbye!\n\n\n\n")
-        break
-    else:
-        clearScreen()
-        print("You did not select a number, please read more carefully.\n")
+    while True: 
+        choice()
+        response = input("\nEnter Number: ")
+        if response == "1":
+            clearScreen()
+            print("\nViewing All Service Records:\n")
+            viewData()
+            print()
+        elif response == '2':
+            clearScreen()
+            addData()
+        elif response =='3':
+            clearScreen()
+            print("Goodbye!\n\n\n\n")
+            break
+        else:
+            clearScreen()
+            print("You did not select a number, please read more carefully.\n")
+
+runTest()
