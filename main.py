@@ -3,7 +3,7 @@ import datetime
 
 # Simple python test for using JSON. Feel free to mess this up and play around with it...
 
-# here is a dumb comment I added for the wiki!
+# here is a dumb comment I added for the wiki! And another because I messed up :|
 
 filename = "./data/service_records.json"
 
