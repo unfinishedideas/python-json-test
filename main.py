@@ -2,7 +2,7 @@ import json
 import datetime
 
 # Simple python test for using JSON. Feel free to mess this up and play around with it...
-#Hi It's Kira!
+#Hi It's Kira! ANYONE SEE THIS?
 
 filename = "./data/service_records.json"
 
