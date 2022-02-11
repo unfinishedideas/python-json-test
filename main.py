@@ -3,6 +3,8 @@ import datetime
 
 # Simple python test for using JSON. Feel free to mess this up and play around with it...
 
+# here is a dumb comment I added for the wiki!
+
 filename = "./data/service_records.json"
 
 def clearScreen():
